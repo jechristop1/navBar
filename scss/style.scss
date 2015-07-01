@@ -1,0 +1,119 @@
+body, html{
+	padding: 0;
+	margin: 0;
+}
+header{
+	display: flex;
+	align-items: center;
+
+}
+
+nav{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	button{
+		height: 40px;
+  		width: 40px;
+  		font-size: 16px;
+		background-color: maroon;
+		color: white;
+		outline: none;
+		border: 1px solid darkred;
+		border-radius: 10px;
+		display: none;
+		&:hover{
+			background-color: darken(maroon, 10%);
+		}
+	}
+}
+
+	div#links{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		ul{
+			margin-left: 40%;
+			width: 100%;
+			list-style: none;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			li{
+				width: 200px;
+				a{
+					text-decoration: none;
+					padding: 5px 20px;
+					font-family: helvetica;
+					font-size: 18px;
+					color: black;
+					&:hover{
+						background-color: black;
+						color: white;
+					}
+
+				}
+			}
+		}
+	}
+
+#logo{
+	padding: 0 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+div#showLinks{
+	background-color: hsla(0,0%,0%,.92);
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+}
+div#showLinks li{ 
+	list-style: none;
+	text-align: center;
+	padding: 10px 40px;
+	margin: 5px 0;
+	&:hover{
+		background-color: hsla(0,0%,0%,.98);
+	}
+	a{
+		color: white;
+		text-decoration: none;
+		font-size: 16px;
+	}
+}
+
+.show{
+	display: block;	
+}
+.hide{
+	display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+	nav{
+		padding-top: 20px;
+	}
+	#logo h1{
+		display: none;
+	}
+	#logo button {
+		display: block;
+	}
+	div#links ul#ulLinks{
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 600px) {
+	#showLinks{
+		display: none;
+	}
+}
+

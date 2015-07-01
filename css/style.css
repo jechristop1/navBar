@@ -1,0 +1,143 @@
+body, html {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+nav button {
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  background-color: maroon;
+  color: white;
+  outline: none;
+  border: 1px solid darkred;
+  border-radius: 10px;
+  display: none;
+}
+nav button:hover {
+  background-color: #4d0000;
+}
+
+div#links {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+div#links ul {
+  margin-left: 40%;
+  width: 100%;
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+div#links ul li {
+  width: 200px;
+}
+div#links ul li a {
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: helvetica;
+  font-size: 18px;
+  color: black;
+}
+div#links ul li a:hover {
+  background-color: black;
+  color: white;
+}
+
+#logo {
+  padding: 0 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+div#showLinks {
+  background-color: rgba(0, 0, 0, 0.92);
+}
+div#showLinks ul {
+  margin: 0;
+  padding: 0;
+}
+
+div#showLinks li {
+  list-style: none;
+  text-align: center;
+  padding: 10px 40px;
+  margin: 5px 0;
+}
+div#showLinks li:hover {
+  background-color: rgba(0, 0, 0, 0.98);
+}
+div#showLinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    padding-top: 20px;
+  }
+
+  #logo h1 {
+    display: none;
+  }
+
+  #logo button {
+    display: block;
+  }
+
+  div#links ul#ulLinks {
+    display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  #showLinks {
+    display: none;
+  }
+}
